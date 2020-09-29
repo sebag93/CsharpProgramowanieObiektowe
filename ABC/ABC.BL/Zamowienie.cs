@@ -51,6 +51,5 @@ namespace ABC.BL
 
             return poprawne;
         }
-
     }
 }
