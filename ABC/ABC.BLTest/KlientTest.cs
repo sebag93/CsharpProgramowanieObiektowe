@@ -97,6 +97,9 @@ namespace ABC.BLTest
             klient.Email = "tomek@dev-hobby.pl";
             var oczekiwana = false;
 
+            var klient1 = new Klient(100);
+            var klient2 = new Klient();
+
             // Act (działaj)
             var aktualna = klient.Zwaliduj();
 

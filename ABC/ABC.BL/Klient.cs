@@ -5,6 +5,16 @@ namespace ABC.BL
 {
     public class Klient
     {
+        public Klient()
+        {
+
+        }
+
+        public Klient(int klientId)
+        {
+            this.KlientId = klientId;
+        }
+
         public static int Licznik { get; set; }
 
         private string _nazwisko;
