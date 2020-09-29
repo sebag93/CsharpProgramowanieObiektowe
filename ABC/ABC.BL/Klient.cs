@@ -46,6 +46,10 @@ namespace ABC.BL
             }
         }
 
+        /// <summary>
+        /// Sprawdzamy poprawność wartości właściwości (wymaganych)
+        /// </summary>
+        /// <returns></returns>
         public bool Zwaliduj()
         {
             var poprawne = true;
@@ -68,12 +72,21 @@ namespace ABC.BL
             return true;
         }
 
+        /// <summary>
+        /// Pobieramy jednego klienta
+        /// </summary>
+        /// <param name="klientId"></param>
+        /// <returns></returns>
         public Klient Pobierz(int klientId)
         {
             // kod który pobiera określonego klienta
             return new Klient();
         }
 
+        /// <summary>
+        /// Pobieramy wszystkich klientów
+        /// </summary>
+        /// <returns></returns>
         public List<Klient> Pobierz()
         {
             // kod który pobiera wszystkich klientów
