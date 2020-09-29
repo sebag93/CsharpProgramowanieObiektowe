@@ -56,7 +56,7 @@ Kurs C# - programowanie obiektowe
   6.10. Budowanie klas o jednym celu
   6.11. Kolejne testy jednostkowe
   6.12. Dziedziczenie
-  6.13 Podsumowanie
+  6.13. Podsumowanie
 7. Ponowne użycie
   7.1. Ponowne użycie
   7.2. Techniki ponownego użycia
