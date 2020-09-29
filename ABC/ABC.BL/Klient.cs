@@ -1,4 +1,5 @@
-﻿using System.Runtime.Remoting.Metadata.W3cXsd2001;
+﻿using System.Collections.Generic;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace ABC.BL
 {
@@ -45,5 +46,38 @@ namespace ABC.BL
             }
         }
 
+        public bool Zwaliduj()
+        {
+            var poprawne = true;
+
+            if (string.IsNullOrWhiteSpace(Nazwisko))
+                poprawne = false;
+            if (string.IsNullOrWhiteSpace(Email))
+                poprawne = false;
+
+            return poprawne;
+        }
+        
+        /// <summary>
+        /// Zapisujemy obecnego klienta
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz()
+        {
+            // kod który zapisuje zdefiniowanego klienta
+            return true;
+        }
+
+        public Klient Pobierz(int klientId)
+        {
+            // kod który pobiera określonego klienta
+            return new Klient();
+        }
+
+        public List<Klient> Pobierz()
+        {
+            // kod który pobiera wszystkich klientów
+            return new List<Klient>();
+        }
     }
 }
