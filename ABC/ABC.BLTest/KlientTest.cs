@@ -22,5 +22,35 @@ namespace ABC.BLTest
             // Assert (potwierdź test)
             Assert.AreEqual(oczekiwana, aktualna);
         }
+
+        [TestMethod]
+        public void ImieNazwiskoImiePuste()
+        {
+            // Arrange (zaaranżuj test)
+            Klient klient = new Klient();
+            klient.Nazwisko = "Nowak";
+            string oczekiwana = "Nowak";
+
+            // Act (działaj)
+            string aktualna = klient.ImieNazwisko;
+
+            // Assert (potwierdź test)
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
+
+        [TestMethod]
+        public void ImieNazwiskoNazwiskoPuste()
+        {
+            // Arrange (zaaranżuj test)
+            Klient klient = new Klient();
+            klient.Imie = "Tomasz";
+            string oczekiwana = "Tomasz";
+
+            // Act (działaj)
+            string aktualna = klient.ImieNazwisko;
+
+            // Assert (potwierdź test)
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace ABC.BL
+﻿using System.Runtime.Remoting.Metadata.W3cXsd2001;
+
+namespace ABC.BL
 {
     public class Klient
     {
@@ -28,7 +30,16 @@
         {
             get
             {
-                return Imie + ", " + Nazwisko;
+                string imieNazwisko = Imie;
+                if (!string.IsNullOrWhiteSpace(Nazwisko))
+                {
+                    if (!string.IsNullOrWhiteSpace(Imie))
+                    {
+                        imieNazwisko += ", ";
+                    }
+                    imieNazwisko += Nazwisko;
+                }
+                return imieNazwisko;
             }
         }
 
