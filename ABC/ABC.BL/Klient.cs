@@ -107,5 +107,10 @@ namespace ABC.BL
             // kod który pobiera wszystkich klientów
             return new List<Klient>();
         }
+
+        public override string ToString()
+        {
+            return ImieNazwisko;
+        }
     }
 }

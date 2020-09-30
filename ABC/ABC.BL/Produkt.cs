@@ -23,27 +23,6 @@ namespace ABC.BL
         public string NazwaProduktu { get; set; }
 
         /// <summary>
-        /// Pobieramy jeden produkt
-        /// </summary>
-        /// <param name="produktId"></param>
-        /// <returns></returns>
-        public Produkt Pobierz(int produktId)
-        {
-            // Kod, który pobiera zdefiniowany produkt
-            return new Produkt();
-        }
-
-        /// <summary>
-        /// Zapisujemy bieżący produkt
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            // Kod, który zapisuje zdefiniowany produkt
-            return true;
-        }
-
-        /// <summary>
         /// Sprawdzamy dane produktu
         /// </summary>
         /// <returns></returns>
@@ -54,6 +33,11 @@ namespace ABC.BL
                 poprawne = false;
 
             return poprawne;
+        }
+
+        public override string ToString()
+        {
+            return NazwaProduktu;
         }
     }
 }
