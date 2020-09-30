@@ -24,7 +24,7 @@ namespace ABC.BL
             }
 
 
-            return new Klient();
+            return klient;
         }
 
         /// <summary>
