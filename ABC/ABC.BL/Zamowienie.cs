@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ABC.BL
 {
@@ -17,6 +18,12 @@ namespace ABC.BL
         public int ZamowienieId { get; private set; }
 
         public DateTimeOffset? DataZamowienia { get; set; }
+
+        public List<PozycjaZamowienia> PozycjaZamowienia { get; set; }
+
+        public int KlientId { get; set; }
+
+        public int AdresDostawyId { get; set; }
 
         /// <summary>
         /// Pobieramy jedno zamówienie
