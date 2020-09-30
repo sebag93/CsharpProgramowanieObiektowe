@@ -23,7 +23,6 @@ namespace ABC.BL
                 klient.Nazwisko = "Nowak";
             }
 
-
             return klient;
         }
 
