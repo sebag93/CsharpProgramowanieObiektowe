@@ -59,6 +59,8 @@ namespace ABC.BL
             }
         }
 
+        public int KlientTyp { get; set; }
+
         /// <summary>
         /// Sprawdzamy poprawność wartości właściwości (wymaganych)
         /// </summary>
