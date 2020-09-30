@@ -50,8 +50,21 @@ namespace ABC.BL
         /// </summary>
         public bool Zapisz(Klient klient)
         {
-            // kod który zapisuje zdefiniowanego klienta
-            return true;
+            // Kod, który zapisuje zdefiniowany produkt
+            var sukces = true;
+            if (klient.MaZmiany && klient.DaneSaPrawidlowe)
+            {
+                if (klient.JestNowy)
+                {
+                    // wywołujemy procedurę składowaną insert
+                }
+                else
+                {
+                    // wywołujemy procedurę składowaną update
+                }
+            }
+
+            return sukces;
         }
     }
 }

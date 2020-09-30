@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace ABC.BL
 {
@@ -34,10 +35,23 @@ namespace ABC.BL
         /// Zapisujemy bieżący produkt
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Produkt produkt)
         {
             // Kod, który zapisuje zdefiniowany produkt
-            return true;
+            var sukces = true;
+            if (produkt.MaZmiany && produkt.DaneSaPrawidlowe)
+            {
+                if (produkt.JestNowy)
+                {
+                    // wywołujemy procedurę składowaną insert
+                }
+                else
+                {
+                    // wywołujemy procedurę składowaną update
+                }
+            }
+
+            return sukces;
         }
     }
 }

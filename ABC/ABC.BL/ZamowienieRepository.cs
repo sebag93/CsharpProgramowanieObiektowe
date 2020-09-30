@@ -85,10 +85,23 @@ namespace ABC.BL
         /// Zapisujemy bieżące zamówienie
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Zamowienie zamowienie)
         {
-            // Kod, który zapisuje zdefiniowane zamówienie
-            return true;
+            // Kod, który zapisuje zdefiniowany produkt
+            var sukces = true;
+            if (zamowienie.MaZmiany && zamowienie.DaneSaPrawidlowe)
+            {
+                if (zamowienie.JestNowy)
+                {
+                    // wywołujemy procedurę składowaną insert
+                }
+                else
+                {
+                    // wywołujemy procedurę składowaną update
+                }
+            }
+
+            return sukces;
         }
 
     }
