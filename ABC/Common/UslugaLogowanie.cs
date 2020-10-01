@@ -5,11 +5,11 @@ namespace Common
 {
     public class UslugaLogowanie
     {
-        public static void PiszDoPliku(List<Object> zmienioneElementy)
+        public static void PiszDoPliku(List<ILogowanie> zmienioneElementy)
         {
             foreach (var element in zmienioneElementy)
             {
-                //Console.WriteLine(element.);
+                Console.WriteLine(element.Log());
             }
         }
     }
