@@ -111,5 +111,15 @@ namespace ABC.BL
         {
             return ImieNazwisko;
         }
+
+        public string Log()
+        {
+            var logTekst = KlientId + ": " +
+                           ImieNazwisko + " " +
+                           "Email: " + Email + " " +
+                           "Status: " + StanObiektu.ToString();
+
+            return logTekst;
+        }
     }
 }

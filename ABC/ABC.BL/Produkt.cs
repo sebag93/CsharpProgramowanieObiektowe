@@ -49,5 +49,15 @@ namespace ABC.BL
         {
             return NazwaProduktu;
         }
+
+        public string LogTekst()
+        {
+            var logTekst = ProduktId + ": " +
+                           NazwaProduktu + " " +
+                           "Opis: " + Opis + " " +
+                           "Status: " + StanObiektu.ToString();
+
+            return logTekst;
+        }
     }
 }
