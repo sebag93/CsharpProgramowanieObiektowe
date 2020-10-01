@@ -12,10 +12,13 @@
                 {
                     if (char.IsUpper(litera))
                     {
+                        // przycinamy wszelkie spacje, które tam są, a potem dodamy naszą spację
+                        wynik = wynik.Trim();
                         wynik += " ";
                     }
                     wynik += litera;
                 }
+                wynik = wynik.Trim();
             }
 
             return wynik;
