@@ -1,4 +1,6 @@
-﻿namespace ABC.BL
+﻿using Common;
+
+namespace ABC.BL
 {
     public class Produkt : KlasaBazowa
     {
@@ -22,7 +24,11 @@
 
         public string NazwaProduktu
         {
-            get { return _NazwaProduktu; }
+            get 
+            {
+                var obslugaStrina = new ObslugaStringa();
+                return obslugaStrina.WstawSpacje(NazwaProduktu); 
+            }
             set { _NazwaProduktu = value; }
         }
 
