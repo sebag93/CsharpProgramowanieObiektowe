@@ -26,8 +26,7 @@ namespace ABC.BL
         {
             get 
             {
-                var obslugaStrina = new ObslugaStringa();
-                return obslugaStrina.WstawSpacje(NazwaProduktu); 
+                return ObslugaStringa.WstawSpacje(_NazwaProduktu); 
             }
             set { _NazwaProduktu = value; }
         }
